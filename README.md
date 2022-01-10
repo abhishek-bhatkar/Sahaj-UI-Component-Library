@@ -1,2 +1,2 @@
-# Sahaj-UI-Component-Library
+# Sahaj-UI
  A basic CSS component library.
