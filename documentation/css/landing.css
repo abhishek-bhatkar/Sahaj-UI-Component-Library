@@ -1,0 +1,125 @@
+@import './root.css';
+.main {
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    max-width: 1600px;
+    margin: auto;
+  }
+  
+  .main .main-text {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  
+  .main .main-logo {
+    width: 50%;
+    height: 88vh;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-title {
+    background: #2563EB;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+  }
+  
+  .main-text .h1 {
+    color:  #F9FAFB;;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 4rem;
+  }
+  
+  .main-text .main-desc {
+    color: #414a4c;
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.5;
+    
+  }
+  
+  .main-text .main-action {
+    text-decoration: none;
+    width: fit-content;
+    background:var(--secondary-color);
+    padding: 1rem 3.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .main-text > .main-action:hover {
+    background: var(--primary-color);
+  }
+  
+  .main-logo img {
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .main {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .main .main-text {
+      width: 70%;
+      align-items: center;
+      text-align: center;
+      margin: 0rem;
+    }
+  
+    .main-text .h1 {
+      text-align: center;
+    }
+  
+    .main-text .main-desc {
+      text-align: center;
+    }
+  
+    .main .main-logo {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .main-text .h1 {
+      font-size: 2.5rem;
+    }
+    
+    .main .main-text {
+      width: 90%;
+    }
+    
+    .info .h1 .main-logo {
+      display: block;
+    }
+  
+    .main-text .main-desc {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+  
+  }
