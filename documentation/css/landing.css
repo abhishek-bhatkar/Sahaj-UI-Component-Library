@@ -28,23 +28,13 @@
   }
   
   .main-title {
-    background: #2563EB;
+    background: var(--primary-color);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 5rem;
     font-weight: 400;
-  }
-  
-  .main-text .h1 {
-    color:  #F9FAFB;;
-    font-size: 5rem;
-    font-weight: bold;
-    text-align: left;
-    line-height: 1.5;
-    font-weight: 400;
-    font-size: 4rem;
   }
   
   .main-text .main-desc {
@@ -91,10 +81,6 @@
       margin: 0rem;
     }
   
-    .main-text .h1 {
-      text-align: center;
-    }
-  
     .main-text .main-desc {
       text-align: center;
     }
@@ -105,9 +91,6 @@
   }
   
   @media screen and (max-width: 700px) {
-    .main-text .h1 {
-      font-size: 2.5rem;
-    }
     
     .main .main-text {
       width: 90%;
