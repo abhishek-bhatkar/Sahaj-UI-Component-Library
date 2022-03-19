@@ -42,7 +42,7 @@
     background: var(--primary-color);
     border-radius: 0.2rem;
     border-left: 3px solid var(--primary-color);
-    color: whitesmoke;
+    color: var(--light-gray);
   }
   
   .scrollbar .sub-heading {
@@ -93,7 +93,7 @@
 
 .docs-main .desc {
   font-size: 1.15rem;
-  color: var(--light-gray);
+  color: var(--black-shade);
 }
 
 .code-snippet {
