@@ -1,0 +1,158 @@
+@import './root.css';
+
+.docs-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+}
+.scrollbar {
+    padding: 1rem;
+    margin-left: 2rem;
+    position: sticky;
+    height: 60vh;
+    top: 8rem;
+    overflow-y: scroll;
+    width: 20%;
+    box-shadow: rgba(200,200,200,2)0px 2px 80px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+  /* remove font later to common file */
+  
+  .scrollbar .scrollbar-list {
+    display: block;
+    padding: 0 0.25rem;
+  }
+  
+  .scrollbar .scrollbar-list .scrollbar-list-item {
+    display: block;
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1.5;
+  }
+  
+  .scrollbar-list-heading {
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .scrollbar .scrollbar-list-item:hover {
+    background: var(--primary-color);
+    border-radius: 0.2rem;
+    border-left: 3px solid var(--primary-color);
+  }
+  
+  .scrollbar .sub-heading {
+    font-weight: 500;
+  }
+  
+  .scrollbar-toggle {
+    position: sticky;
+    top: 6rem;
+    left: 1.25rem;
+    text-align: left;
+    z-index: 10;
+    border: none;
+    background: transparent;
+    background-image: url("../../assets/bars-solid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1.75rem;
+    aspect-ratio: 1;
+    border: 0;
+    cursor: pointer;
+    display: none;
+    
+  }
+  
+  .scrollbar .link {
+      text-decoration: none;
+      color: inherit;
+  }
+  
+  .scrollbar .link-active {
+    font-weight: 900;
+  }
+
+  .docs-main {
+    padding: 4rem 2rem;
+    line-height: 1.5;
+    width: 60%;
+    min-height: 100vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.docs-main .h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.docs-main .desc {
+  font-size: 1.15rem;
+  color: var(--clr-light-gray);
+}
+
+.code-snippet {
+  width: 100%;
+  border: none;
+  margin-top: 1rem;
+  transform: scale(1);
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+/* remove to common code later */
+.mt-xl {
+  margin-top: 2rem;
+}
+
+.mb-xl {
+  margin-bottom: 2rem;
+}
+
+  @media screen and (max-width: 900px) {
+    .scrollbar-toggle {
+      display: initial;
+    }
+  
+    .scrollbar-toggle[aria-expanded="true"] {
+      background-image: url("../../assets/close.svg");
+    }
+  
+    .scrollbar:focus-visible {
+      outline: 5px solid white;
+      outline-offset: 5px;
+    }
+  
+    .scrollbar {
+      position: fixed;
+      top: 5rem;
+      right: 3rem;
+      bottom: 0;
+      left: 0;
+      width: 80%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      z-index: 5;
+      margin: 0;
+      padding-left: 2rem;
+      padding-top: 4rem;
+      transform: translateX(-100%);
+      transition: transform 500ms ease-in-out;
+    }
+  
+    .scrollbar[data-visible="true"] {
+      transform: translateX(0);
+    }
+
+    .docs-main {
+      padding: 2rem 1rem;
+      width: 100%;
+    }
+  }
