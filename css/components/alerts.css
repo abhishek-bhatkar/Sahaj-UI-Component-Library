@@ -1,0 +1,48 @@
+@import '../root.css';
+.alert {
+    border-radius: 0.3rem;
+    padding: 1rem 3rem 1rem 1rem;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    position: relative;
+  }
+  
+  .alert-success {
+    color:var(--white);
+    background-color: var(--calm-green);
+  }
+  
+  .alert-danger {
+    color: var(--white);
+    background-color: var( --burnt-red);
+  }
+  
+  .alert-warning {
+    color: var(--white);
+    background-color: var(--thai-curry);
+  }
+  
+  .alert-info {
+    color: var(--white);
+    background-color: var(--happy-blue);
+  }
+  
+  .alert-primary {
+    color: var(--white);
+    background-color: var(--primary-color-dark);
+  }
+  
+  .alert i {
+    margin-right: 1rem;
+  }
+
+  .alert-none {
+    display: none;
+  }
+  .alert .icon-dismiss {
+    text-align: right;
+    position: absolute;
+    font-size: 1.25rem;
+    right: 0;
+    cursor: pointer;
+  }
