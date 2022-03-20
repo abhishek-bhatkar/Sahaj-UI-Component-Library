@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+     <!-- Header -->
+     <header class="header">
+        <div class="header-wrapper">
+            <div class="logo">
+                <a href="../../index.html"><span class="logo-title" >Sahaj-UI</span></a>
+            </div>
+
+            <nav>
+                <ul class="navigation">
+                    <li>
+                        <a href="https://github.com/abhishek-bhatkar/Sahaj-UI-Component-Library" class="nav-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/ab_bhatkar" class="nav-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.linkedin.com/in/abhishek-bhatkar-86385712b" class="nav-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- button for mobile -->
+    <button class="scrollbar-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Components</span>
+    </button>
+
+    <!-- left scrollbar -->
+    <div class="docs-container">
+        <div id="scrollbar-navigation" class="scrollbar" data-visible="false">
+            <div class="scrollbar-list-sub">
+                <div class="scrollbar-list-heading">Getting Started</div>
+                <ul class="scrollbar-list">
+                    <li class="scrollbar-list-item"><a href="../../documentation/index.html" class="link"> Installation </a></li>
+                </ul>
+            </div>
+            <div class="scrollbar-list-sub">
+                <div class="scrollbar-list-heading">Components</div>
+                <ul class="scrollbar-list">
+                    <li class="scrollbar-list-item"><a href="./avatar.html" class="link"> Avatars </a></li>
+                    <li class="scrollbar-list-item"><a href="./alerts.html" class="link link-active"> Alerts </a></li>
+                    <li class="scrollbar-list-item"><a href="./badges.html" class="link"> Badges </a></li>
+                    <li class="scrollbar-list-item"><a href="./button.html" class="link"> Buttons </a></li>
+                    <li class="scrollbar-list-item"><a href="./card.html" class="link"> Cards </a></li>
+                    <li class="scrollbar-list-item"><a href="./image.html" class="link"> Images </a></li>
+                    <li class="scrollbar-list-item"><a href="./form.html" class="link"> Form </a></li>
+                    <li class="scrollbar-list-item"><a href="./nav.html" class="link"> Navigation bar </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- main body -->
+        <main class="docs-main">
+            <h1 class="h1">Alerts</h1>
+            <p class="desc">Sahaj-UI provided alerts.</p>
+
+            <section id="icon-alerts" class="main-section-component">
+                <h2 class="h2">Alerts with icons</h2>
+                <div class="section-component-inside component-demo-col">
+                    <div class="alert alert-success">
+                        <i class="fas fa-check-circle"></i> This is a success alert!
+                    </div>
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle"></i> This is a warning alert!
+                    </div>
+                    <div class="alert alert-danger">
+                        <i class="fas fa-exclamation-triangle"></i> This is a danger alert!
+                    </div>
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i> This is an info alert!
+                    </div>
+                </div>
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/VWAsIMCRFXlhXrIXimT9"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
+            <section id="basic-alerts" class="main-section-component">
+                <h2 class="h2">Basic alerts</h2>
+                <div class="section-component-inside component-demo-col">
+                    <div class="alert alert-primary">This is a primary alert! </div>
+                    <div class="alert alert-success">This is a success alert! </div>
+                    <div class="alert alert-warning">This is a warning alert! </div>
+                    <div class="alert alert-danger">This is a danger alert! </div>
+                    <div class="alert alert-info">This is a info alert! </div>
+                </div>
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/U1muqtcQiWVVA1l7CE8x"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
+            <section id="dismiss-alerts" class="main-section-component">
+                <h2 class="h2">Alert with dismiss</h2>
+                <div class="section-component-inside component-demo-col">
+                    <div class="alert alert-success" id="alert-dimiss">
+                        <i class="fas fa-check-circle"></i> This is a success alert with a dismiss!
+                        <i class="fas fa-times icon-dismiss" id="alert-dimiss-btn"></i>
+                    </div>
+                </div>
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/XPqDwKNZrvavioUJuLcu"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+                <p class="desc">JavaScript code</p>
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/T3Z6hiYVznYuKonGRo7S"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
+            
+        </main>
+    </div>
+<script src="../../javascript/app.js"></script>
+</body>
+</html>

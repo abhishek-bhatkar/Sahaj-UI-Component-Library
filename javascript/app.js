@@ -1,5 +1,7 @@
 const nav = document.querySelector("#scrollbar-navigation");
 const navToggle = document.querySelector(".scrollbar-toggle");
+const alertDismissDiv = document.querySelector("#alert-dimiss");
+const alertDismissBtn = document.querySelector("#alert-dimiss-btn");
 
 navToggle.addEventListener("click", () => {
 
@@ -14,4 +16,8 @@ navToggle.addEventListener("click", () => {
         navToggle.setAttribute("aria-expanded", "true");
     }
 
+})
+
+alertDismissBtn.addEventListener("click", () => {
+    alertDismissDiv.classList.add("alert-none");
 })
