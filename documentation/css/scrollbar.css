@@ -138,6 +138,10 @@
   align-items: stretch;
 }
 
+.gap-in{
+  gap: 2rem;
+}
+
 .code-snippet {
   width: 100%;
   border: none;

@@ -1,0 +1,182 @@
+@import '../root.css';
+
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem 0;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .btn:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 4px 25px 35px 4px;
+  }
+  
+  .btn:disabled {
+    opacity: 0.6;
+    cursor: no-drop;
+  }
+  
+  /* 
+      Basic Buttons
+  */
+  .primary {
+    background-color: var(--primary-color);
+  }
+  
+  .secondary {
+    background-color: var(--secondary-color);
+  }
+  
+  .success {
+    background-color: var( --calm-green);
+  }
+  
+  .danger {
+    background-color: var(--burnt-red);
+  }
+  
+  .warning {
+    background-color: var(--thai-curry);
+  }
+  
+  .info {
+    background-color: var(--happy-blue);
+  }
+  
+  .primary:hover {
+    background-color: var(--primary-color-dark);
+  }
+  
+  .secondary:hover {
+    background-color: var(--secondary-color-dark);
+  }
+  
+  .success:hover {
+    background-color: var(--green-dark);
+  }
+  
+  .danger:hover {
+    background-color: var(--red-dark);
+  }
+  
+  .warning:hover {
+    background-color: var(--yellow-dark);
+  }
+  
+  .info:hover {
+    background-color: var(--blue-dark);
+  }
+  
+  .outline-primary {
+    color: var(--primary-color);
+    outline: var(--primary-color) solid 1px;
+  }
+  
+  .outline-secondary {
+    color: var(--secondary-color);
+    outline: var(--secondary-color) solid 1px;
+  }
+  
+  .outline-success {
+    color: var(--calm-green);
+    outline: var(--calm-green) solid 1px;
+  }
+  
+  .outline-danger {
+    color: var(--burnt-red);
+    outline: var(--burnt-red) solid 1px;
+  }
+  
+  .outline-warning {
+    color: var(--thai-curry);
+    outline: var(--thai-curry) solid 1px;
+  }
+  
+  .outline-info {
+    color: var(--happy-blue);
+    outline: var(--happy-blue) solid 1px;
+  }
+  
+  .outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .outline-secondary:hover {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .outline-success:hover {
+    background-color: var(--green-dark);
+    color: white;
+  }
+  
+  .outline-danger:hover {
+    background-color: var(--red-dark);
+    color: white;
+  }
+  
+  .outline-warning:hover {
+    background-color: var(--yellow-dark);
+    color: white;
+  }
+  
+  .outline-info:hover {
+    background-color: var(--blue-dark);
+    color: white;
+  }
+  
+  .float-action {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fa .icon {
+    font-size: 1rem;
+  }
+  
+  .with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  
+  .btn .icon {
+    font-size: 1rem;
+  }
+  
+  .fs-xl {
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+  }
+  
+  .fs-lg {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .fs-md {
+    font-size: 1.125rem;
+    padding: 0.5rem 1.125rem;
+  }
+  
+  .fs-sm {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }

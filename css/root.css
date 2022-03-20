@@ -3,8 +3,30 @@
     --secondary-color: #EBAD25;
     --light-gray: #F9FAFB;;
     --primary-color-dark:#1043b3;
+    --secondary-color-dark:#bc8a1d;
+
     
     --black-shade: #414a4c;
+
+    --clr-green: #16a34a;
+    --green-dark:#15803d;
+    --green-light: #90ee8a;
+
+    --clr-yellow: #eab308;
+    --yellow-dark: #a16207;
+    --yellow-light: #fef08a;
+
+    --clr-red: #dc2626;
+    --red-dark: #b91c1c;
+    --red-light: #ffcdce;
+
+    --clr-blue: #60a5fa;
+    --blue-dark: #1d4ed8;
+    --blue-light: #bfdbfe;
+
+    --gray-light:#f3f4f6;
+    --clr-gray: gray;
+
 
     --gray-light:#f3f4f6;
     --gray: gray;
