@@ -5,26 +5,11 @@
     --primary-color-dark:#1043b3;
     
     --black-shade: #414a4c;
-    --clr-green: #16a34a;
-    --clr-green-dark:#15803d;
-    --clr-green-light: #90ee8a;
 
-    --clr-yellow: #eab308;
-    --clr-yellow-dark: #a16207;
-    --clr-yellow-light: #fef08a;
-
-    --clr-red: #dc2626;
-    --clr-red-dark: #b91c1c;
-    --clr-red-light: #ffcdce;
-
-    --clr-blue: #60a5fa;
-    --clr-blue-dark: #1d4ed8;
-    --clr-blue-light: #bfdbfe;
-
-    --clr-gray-light:#f3f4f6;
-    --clr-gray: gray;
-    --clr-dark-gray: #374151;
-    --clr-gray-opacity: rgb(243, 244, 246, 0.5);
+    --gray-light:#f3f4f6;
+    --gray: gray;
+    --dark-gray: #374151;
+    --gray-opacity: rgb(243, 244, 246, 0.5);
 
 
     --white: #ffffff;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avatar</title>
+    <title>Badges</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -55,9 +55,9 @@
             <div class="scrollbar-list-sub">
                 <div class="scrollbar-list-heading">Components</div>
                 <ul class="scrollbar-list">
-                    <li class="scrollbar-list-item"><a href="./avatar.html" class="link link-active"> Avatars </a></li>
+                    <li class="scrollbar-list-item"><a href="./avatar.html" class="link"> Avatars </a></li>
                     <li class="scrollbar-list-item"><a href="./alerts.html" class="link"> Alerts </a></li>
-                    <li class="scrollbar-list-item"><a href="./badges.html" class="link"> Badges </a></li>
+                    <li class="scrollbar-list-item"><a href="./badges.html" class="link link-active"> Badges </a></li>
                     <li class="scrollbar-list-item"><a href="./button.html" class="link"> Buttons </a></li>
                     <li class="scrollbar-list-item"><a href="./card.html" class="link"> Cards </a></li>
                     <li class="scrollbar-list-item"><a href="./image.html" class="link"> Images </a></li>
@@ -69,34 +69,56 @@
 
         <!-- main body -->
         <main class="docs-main">
-            <h1 class="h1">Avatar</h1>
-            <p class="desc">Sahaj-UI provided image avatars and text avatars. </p>
+            <h1 class="h1">Badges</h1>
+            <p class="desc">Sahaj-UI provided badgess.</p>
 
-            <section id="image-avatars" class="main-section-component">
-                <h2 class="h2">Image avatars</h2>
+            <section id="avatar" class="main-section-component">
+                <h2 class="h2">Badges on Avatars</h2>
                 <div class="section-component-inside">
-                    <img src="../../assets/avatar.jpg" alt="avatar" class="avatar avatar-lg">
-                    <img src="../../assets/avatar.jpg" alt="avatar" class="avatar avatar-md">
-                    <img src="../../assets/avatar.jpg" alt="avatar" class="avatar avatar-sm">
-                    <img src="../../assets/avatar.jpg" alt="avatar" class="avatar avatar-xs">
+                    <div class="badge-container">
+                        <img class="avatar avatar-lg" src="../../assets/avatar.jpg" alt="avatar">
+                        <span class="badge badge-status badge-status-online"></span>
+                    </div>
+
+                    <div class="badge-container">
+                        <img class="avatar avatar-md" src="../../assets/avatar.jpg" alt="avatar">
+                        <span class="badge badge-status badge-status-away"></span>
+                    </div>
+
+                    <div class="badge-container">
+                        <img class="avatar avatar-sm" src="../../assets/avatar.jpg" alt="avatar">
+                        <span class="badge badge-status badge-status-offline"></span>
+                    </div>
+
+                    <div class="badge-container">
+                        <img class="avatar avatar-xs" src="../../assets/avatar.jpg" alt="avatar">
+                        <span class="badge badge-status badge-status-away"></span>
+                    </div>
+
                 </div>
-                <iframe class="code-snippet" src="https://carbon.now.sh/embed/?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=true&dsyoff=0px&dsblur=25px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-xs%2522%253E"
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/o7g0TE1JPIJQSQZQhW1j"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </section>
 
-            <section id="text-avatars" class="main-section-component">
-                <h2 class="h2">Text avatars</h2>
-                <div class="section-component-inside">
-                    <div class="avatar avatar-text avatar-lg" role="img" alt="avatar">AB</div>
-                    <div class="avatar avatar-text avatar-md" role="img" alt="avatar">AB</div>
-                    <div class="avatar avatar-text avatar-sm" role="img" alt="avatar">AB</div>
-                    <div class="avatar avatar-text avatar-xs" role="img" alt="avatar">AB</div>
+            <section id="icon" class="main-section-component">
+                <h2 class="h2">Badges on icons</h2>
+                <div class="section-component-inside gap-in">
+                    <div class="badge-container">
+                        <i class="fas fa-shopping-cart icon"></i>
+                        <span class="badge badge-status badge-notification">3</span>
+                    </div>
+
+                    <div class="badge-container">
+                        <i class="fas fa-message icon"></i>
+                        <span class="badge badge-status badge-notification">3</span>
+                    </div>
                 </div>
-                <iframe class="code-snippet" src="https://carbon.now.sh/embed/42S96bEgNhTT2HiIfRKp"
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/TvcQCQr5ZAHdx7mpvXn0"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </section>
+          
 
             
         </main>
