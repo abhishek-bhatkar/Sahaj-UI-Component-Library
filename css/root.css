@@ -4,6 +4,8 @@
     --light-gray: #F9FAFB;;
     --primary-color-dark:#1043b3;
     --secondary-color-dark:#bc8a1d;
+    --primary-color-light:#6691f1;
+    --secondary-color-light:#f1c566;
 
     
     --black-shade: #414a4c;
@@ -46,4 +48,31 @@
     --green: #07e307;
     --red: #de1010;
     --gray-status: #8a9c8a;
+}
+
+/* Resetting elements */
+p
+{
+  margin: 0;
+}
+
+
+
+body {
+  min-height: 100vh;
+  font-family: var(--ff-serif)
+}
+
+img,
+video,
+iframe {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
