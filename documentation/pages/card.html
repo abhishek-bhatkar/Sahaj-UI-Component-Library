@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="logo">
+                <a href="../../index.html"><span class="logo-title" >Sahaj-UI</span></a>
+            </div>
+
+            <nav>
+                <ul class="navigation">
+                    <li>
+                        <a href="https://github.com/abhishek-bhatkar/Sahaj-UI-Component-Library" class="nav-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/ab_bhatkar" class="nav-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="www.linkedin.com/in/abhishek-bhatkar-86385712b" class="nav-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- button for mobile -->
+    <button class="scrollbar-toggle" aria-controls="primary-navigation">
+        <span class="sr-only" aria-expanded="false">Components</span>
+    </button>
+
+    <!-- left scrollbar -->
+    <div class="docs-container">
+        <div id="scrollbar-navigation" class="scrollbar" data-visible="false">
+            <div class="scrollbar-list-sub">
+                <div class="scrollbar-list-heading">Getting Started</div>
+                <ul class="scrollbar-list">
+                    <li class="scrollbar-list-item"><a href="../../documentation/index.html" class="link"> Installation </a></li>
+                </ul>
+            </div>
+            <div class="scrollbar-list-sub">
+                <div class="scrollbar-list-heading">Components</div>
+                <ul class="scrollbar-list">
+                    <li class="scrollbar-list-item"><a href="./avatar.html" class="link"> Avatars </a></li>
+                    <li class="scrollbar-list-item"><a href="./alerts.html" class="link"> Alerts </a></li>
+                    <li class="scrollbar-list-item"><a href="./badges.html" class="link"> Badges </a></li>
+                    <li class="scrollbar-list-item"><a href="./button.html" class="link"> Buttons </a></li>
+                    <li class="scrollbar-list-item"><a href="./card.html" class="link link-active"> Cards </a></li>
+                    <li class="scrollbar-list-item"><a href="./image.html" class="link"> Images </a></li>
+                    <li class="scrollbar-list-item"><a href="./form.html" class="link"> Form </a></li>
+                    <li class="scrollbar-list-item"><a href="./nav.html" class="link"> Navigation bar </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- main body -->
+        <main class="docs-main">
+            <h1 class="h1">Cards</h1>
+            <p class="desc">Sahaj-UI provided various cards.</p>
+
+            <section id="basic-card" class="main-section-component">
+                <h2 class="h2">Basic Vertical Card</h2>
+                <div class="section-component-inside">
+                    <div class="card">
+                        <img src="../../assets/Img-card.jpeg" alt="" class="img-responsive img-card">
+                        <div class="info-card">
+                            <p class="txt-dark-gray">Grogu Toy</p>
+                            <p class="bold"> Rs. 1299</p>
+                            <p>Free delivery</p>
+                        </div>
+                        <i class="fa-solid fa-heart icon"></i>
+                    </div>
+                </div>
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/LTlyGqTrhbYy387bXH6q"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
+            <section id="horizontal-card" class="main-section-component">
+                <h2 class="h2">Horizontal card</h2>
+                <div class="section-component-inside">
+
+                    <div class="card horizontal">
+                        <img src="../../assets/Img-card.jpeg" alt="" class="img-responsive img-card d-block">
+                        <div class="info-card">
+                            <p class="txt-dark-gray">Grogu Toy</p>
+                            <p class="bold"> Rs. 1299</p>
+                            <p>Free delivery</p>
+                            <div class="action">
+                                <button class="btn primary">
+                                    <i class="fas fa-shopping-cart icon"></i> To Cart
+                                </button>
+                                <button class="btn outline-primary">
+                                    <i class="fas fa-heart icon"></i> To Wishlist
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/JX73lwrMAcZGpjBPnAO9"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
+            <section id="badge-card" class="main-section-component">
+                <h2 class="h2">Card with badge</h2>
+                <div class="section-component-inside">
+                    <div class="card badge-container">
+                        <img src="../../assets/Img-card.jpeg" alt="" class="img-responsive img-card">
+                        <div class="info-card">
+                            <p class="txt-dark-gray">Grogu Toy</p>
+                            <p class="bold"> Rs. 1299</p>
+                            <p>Free delivery</p>
+                        </div>
+                        <i class="fa-solid fa-heart icon"></i>
+                        <span class="badge-pill">Sale</span>
+                    </div>
+                </div>
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/zhNQ7xT36Y8xThB17KY0"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
+            <section id="textoverlay-card" class="main-section-component">
+                <h2 class="h2">Card with text overlay</h2>
+                <div class="section-component-inside">
+                    <div class="card">
+                        <img src="../../assets/Img-card.jpeg" alt="" class="img-responsive img-card">
+                        <div class="info-card">
+                            <p class="txt-dark-gray">Grogu Toy</p>
+                            <p class="bold"> Rs. 1299</p>
+                            <p>Free delivery</p>
+                        </div>
+                        <i class="fa-solid fa-heart icon"></i>
+                        <div class="overlay fw-semibold fs-lg"> Sold Out </div>
+                    </div>
+                </div>
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/fPbMDWzT6Um0hGqQsJ7w"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
+            <section id="textonly-card" class="main-section-component">
+                <h2 class="h2">Text only card</h2>
+                <div class="section-component-inside">
+                    <div class="card textonly">
+                        <div class="info-card">               
+                          <p class="txt-dark-gray fw-semibold fs-md">Grogu Toy</p>
+                          <p class="bold"> Rs. 1299</p>
+                          <p>Free delivery</p>
+                          <div class="action">
+                            <button class="btn primary"> 
+                                <i class="fas fa-shopping-cart icon"></i> To Cart
+                            </button>
+                          </div>
+                        </div>
+                        <i class="fa-solid fa-heart icon"></i>
+                    </div>
+                
+                </div>
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/O3avtVthW4lRZKXItLoy"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
+            <section id="dismiss-card" class="main-section-component">
+                <h2 class="h2">Card with dismiss</h2>
+                <div class="section-component-inside">
+                    <div class="card textonly">
+                        <div class="info-card">
+                          <p class="txt-dark-gray">Grogu Toy</p>
+                          <p class="bold"> Rs. 1299</p>
+                          <p>Free delivery</p>
+                          <div class="action">
+                            <button class="btn primary">
+                              <i class="fas fa-shopping-cart icon"></i> To Cart
+                            </button>
+                          </div>
+                        </div>
+                        <i class="fas fa-times icon"></i>
+                    </div>
+                </div>
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/iLSCkVzj6XScUUpYBqg2"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+            
+        </main>
+    </div>
+<script src="../../javascript/app.js"></script>
+</body>
+</html>
