@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avatar</title>
+    <title>Input</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
+      <!-- Header -->
+      <header class="header">
         <div class="header-wrapper">
             <div class="logo">
                 <a href="../../index.html"><span class="logo-title" >Sahaj-UI</span></a>
@@ -55,13 +55,13 @@
             <div class="scrollbar-list-sub">
                 <div class="scrollbar-list-heading">Components</div>
                 <ul class="scrollbar-list">
-                    <li class="scrollbar-list-item"><a href="./avatar.html" class="link link-active"> Avatars </a></li>
+                    <li class="scrollbar-list-item"><a href="./avatar.html" class="link"> Avatars </a></li>
                     <li class="scrollbar-list-item"><a href="./alerts.html" class="link"> Alerts </a></li>
                     <li class="scrollbar-list-item"><a href="./badges.html" class="link"> Badges </a></li>
                     <li class="scrollbar-list-item"><a href="./button.html" class="link"> Buttons </a></li>
                     <li class="scrollbar-list-item"><a href="./card.html" class="link"> Cards </a></li>
                     <li class="scrollbar-list-item"><a href="./image.html" class="link"> Images </a></li>
-                    <li class="scrollbar-list-item"><a href="./input.html" class="link"> Input </a></li>
+                    <li class="scrollbar-list-item"><a href="./input.html" class="link link-active"> Input </a></li>
                     <li class="scrollbar-list-item"><a href="./nav.html" class="link"> Navigation bar </a></li>
                 </ul>
             </div>
@@ -69,38 +69,41 @@
 
         <!-- main body -->
         <main class="docs-main">
-            <h1 class="h1">Avatar</h1>
-            <p class="desc">Sahaj-UI provided image avatars and text avatars. </p>
-
-            <section id="image-avatars" class="main-section-component">
-                <h2 class="h2">Image avatars</h2>
-                <div class="section-component-inside">
-                    <img src="../../assets/avatar.jpg" alt="avatar" class="avatar avatar-lg">
-                    <img src="../../assets/avatar.jpg" alt="avatar" class="avatar avatar-md">
-                    <img src="../../assets/avatar.jpg" alt="avatar" class="avatar avatar-sm">
-                    <img src="../../assets/avatar.jpg" alt="avatar" class="avatar avatar-xs">
+            <h1 class="h1">Input elements</h1>
+            <p class="desc">Sahaj-UI provided various inputs.</p>
+ 
+            <section id="basic-textbox" class="main-section-component">
+                <h2 class="h2">Textbox</h2>
+                <div class="section-component-inside component-demo-col">
+                        <label class="input-label">Label Text</label>
+                        <input type="text" class="input" placeholder="Enter Text">
                 </div>
-                <iframe class="code-snippet" src="https://carbon.now.sh/embed/?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&width=680&ds=true&dsyoff=0px&dsblur=25px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-lg%2522%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-md%2522%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-sm%2522%253E%250A%253Cimg%2520src%253D%2522..%252F..%252Fassets%252Favatar.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522avatar%2520avatar-xs%2522%253E"
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/J0REq0Hi1ZgEncnKWy0C"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </section>
-
-            <section id="text-avatars" class="main-section-component">
-                <h2 class="h2">Text avatars</h2>
-                <div class="section-component-inside">
-                    <div class="avatar avatar-text avatar-lg" role="img" alt="avatar">AB</div>
-                    <div class="avatar avatar-text avatar-md" role="img" alt="avatar">AB</div>
-                    <div class="avatar avatar-text avatar-sm" role="img" alt="avatar">AB</div>
-                    <div class="avatar avatar-text avatar-xs" role="img" alt="avatar">AB</div>
-                </div>
-                <iframe class="code-snippet" src="https://carbon.now.sh/embed/42S96bEgNhTT2HiIfRKp"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
-            </section>
-
             
+            <section id="validation-textbox" class="main-section-component">
+                <h2 class="h2">Input Validation</h2>
+                <div class="section-component-inside component-demo-col">
+                        <input type="text" class="input input-danger" placeholder="Enter Username">
+                        <span class="input-valid input-error">
+                          <i class="fas fa-info-circle"></i> Error
+                        </span>
+
+                        <input type="text" class="input input-warning" placeholder="Enter Password">
+                        <span class="input-valid input-success">
+                          <i class="fas fa-check-circle"></i> Success
+                        </span>
+                </div>
+                <iframe class="code-snippet" src="https://carbon.now.sh/embed/LSh8f9UacxQnLXpdqXEy"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </section>
+
         </main>
     </div>
-<script src="../../javascript/app.js"></script>
+<script src="../../javascript/app.js"></script>    
+    
 </body>
 </html>

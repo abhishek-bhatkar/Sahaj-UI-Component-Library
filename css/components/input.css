@@ -1,0 +1,54 @@
+@import '../root.css';
+
+.input[type="text"] {
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.5rem;
+  outline: 0;
+  border: 1px solid var(--secondary-color-light);
+  margin: 0.25rem 0;
+}
+
+.input[type="text"]:focus {
+  border: 2px solid var(--primary-color);
+}
+
+.input[type="text"]:hover{
+  box-shadow: var(--gray-light);
+}
+
+.input:disabled {
+  background-color: var(--secondary-color-light);
+}
+
+.input:disabled:hover {
+  box-shadow: none;
+}
+
+.input-label {
+  color: var(--secondary-color-dark);
+}
+
+.input-valid {
+  font-size: 0.85rem;
+}
+
+.input-valid .icon {
+  margin-right: 0.25rem;
+}
+
+.input-danger {
+  border: 2px solid var(--burnt-red);
+}
+
+.input-warning {
+  border: 2px solid var(--calm-green);
+}
+
+.input-error {
+  color: var(--burnt-red);
+}
+
+.input-success {
+  color: var(--calm-green);
+}
