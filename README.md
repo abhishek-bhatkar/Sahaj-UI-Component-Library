@@ -21,4 +21,5 @@ Following CSS components are provided in the component library:
 - Cards
 - Images
 - Inputs
+- Navigation bar
 
